@@ -1,0 +1,15 @@
+public class Program {
+	public static void main(String[] args) {
+		// Program 9 - Sum of all digits in a given number
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number");
+		int num = sc.nextInt();
+		int sum=0;
+		while(num !=0) {
+			int digit = num%10;
+		    sum+=digit;
+		    num/=10;
+		}
+		System.out.print("Sum of all digits of a number : "+sum);
+	}
+}
