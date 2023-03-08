@@ -1,0 +1,17 @@
+public class Program {
+	public static void main(String[] args) {
+		// Program 11 -  second largest number in an integer array
+		int arr[]= {35,34,25,87,32,12,46};
+		int temp;
+		for(int i=0; i<=arr.length-1; i++) {
+			for(int j=i+1; j<=arr.length-1; j++) {
+			if(arr[i]<arr[j]) {
+				temp=arr[i];
+				arr[i]=arr[j];
+				arr[j]= temp;
+			}
+		}
+	}
+	System.out.println("second largest number in an integer array "+arr[1]);
+	}
+}
