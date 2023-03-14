@@ -1,0 +1,19 @@
+public class Program {
+	public static void main(String[] args) {
+		// Program- reverse each word of a string
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a sentence : ");
+		String s = sc.nextLine();
+		String s1[] = s.split(" ");
+		String reversString = "";
+		for(int i=0; i<s1.length; i++) {
+			String word = s1[i];
+			String reverseWord ="";
+			for(int j=word.length()-1; j>=0; j--) {
+				reverseWord += word.charAt(j); 
+			}
+			reversString += reverseWord + " ";
+		}
+		System.out.println("Reverse each words : "+reversString);
+	}
+}
