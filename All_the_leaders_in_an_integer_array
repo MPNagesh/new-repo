@@ -1,0 +1,15 @@
+public class Program {
+	public static void main(String[] args) {
+		// Program 24 - find all the leaders in an integer array
+		int arr[] = {12,19,7,14,6,8,3};
+		int max =arr[arr.length-1];
+		System.out.println("The leaders of an array are : ");
+		System.out.println(max);
+		for(int i=arr.length-2; i>=0; i--) {
+			if(arr[i]>max) {
+				System.out.println(arr[i]);
+				max=arr[i];
+			}
+		}
+	}
+}
