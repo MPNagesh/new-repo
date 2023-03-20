@@ -1,0 +1,21 @@
+public class Program {
+	public static void main(String[] args) {
+		// Program 26 - Selection sort 
+		int arr[]= {12,35,46,89,23,10,73};
+		int min, pos, help;
+		for(int i=0; i<=arr.length-2; i++) {
+			min=arr[i];
+			pos = i;
+			for(int j=i+1; j<=arr.length-1; j++) {
+				if(arr[j]<min) {
+					min =arr[j];
+					pos = j;
+				}
+			}
+			help =arr[i];
+			arr[i]=arr[pos];
+			arr[pos] =help;
+		}
+		System.out.println("Array elements after sorting : "+Arrays.toString(arr));
+	}
+}
